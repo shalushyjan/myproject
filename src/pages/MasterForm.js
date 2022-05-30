@@ -135,7 +135,7 @@ class MasterForm extends Component {
   render() {
     return (
       <>
-       <div class="">
+       <div className="pt-4 mt-16">
         <Form onSubmit={this.handleSubmit}>
           <Card>
             <CardHeader className="header">Create your Campaign</CardHeader>

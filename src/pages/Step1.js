@@ -15,14 +15,14 @@ const Step1 = props => {
       <FormGroup>
         <Label className="textFeild">Campaign Name</Label>
        
-        <Input type="text" name="requiredField campaignname" placeholder="Enter your campaign name" className="outline-none py-2 pr-4 white block w-full textstyle"
-        required
-          value={props.campaignname}
-          onChange={props.handleChange} 
+        <Input type="text" name=" campaignname" placeholder="Enter your campaign name" className="outline-none py-2 pr-4 white block w-full textstyle"
+          required
+          // value={props.campaignname}
+          // onChange={props.handleChange} 
           />
-  {/* {errors.requiredField && <span>This field is required</span>} */}
+ 
       
-          <Label className="textFeild">Discription</Label>
+          <Label className="textFeild">Description</Label>
         <textarea name="discription" cols={40} rows={5} placeholder="Enter your Campaign details " className="outline-none white py-2 pr-4  block w-full textstyle"
           required
           value={props.discription} 

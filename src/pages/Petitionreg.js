@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from "react";
 import "./MultiStepProgressBar.css";
 import { FormGroup, Label, Input } from "reactstrap";
 import {
@@ -11,19 +11,48 @@ import {
 } from "reactstrap";
 import { Helmet } from "react-helmet";
 
+class Petitionreg extends Component {
+  constructor(props) {
+    super(props);
 
-const Petitionreg = () => {
+    this.state = {
+      campaignname:"",
+      discription:"",
+    
+
+    };
+    
+    // Bind the submission to handleChange()
+    this.handleChange = this.handleChange.bind(this);
+
+  }
+
+  // Use the submitted data to set the state
+  handleChange(event) {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  }
+
+
+  handleSubmit = event => {
+    event.preventDefault();
+    const { campaignname, discription,status} = this.state;
+    alert(`Your registration detail: \n 
+      Campaign Name: ${campaignname} \n 
+      Discription: ${discription}`);
+  };
+
+ render() {
   return (
     <>
-<div className="main">
-      <Helmet>
-        <style>{"body { background-image:url(https://th.bing.com/th/id/OIP.a7zcxkWpyz-ZV0e_dRu_WwHaEl?pid=ImgDet&w=1280&h=792&rs=1); background-size: cover; }"}</style>
-      </Helmet>
+<div className="pt-96 mt-28 main">
       <Container>
         <Row>
           <Col>
-             <div class="">
-        <Form >
+             <div className="pt-4 mt-16">
+        <Form onSubmit={this.handleSubmit} >
           <Card>
             <CardHeader className="header">Create your Petition</CardHeader>
             <CardBody className="pl-16 pr-16 pb-16">
@@ -32,14 +61,16 @@ const Petitionreg = () => {
        
         <Input type="text" name="requiredField campaignname" placeholder="Enter your campaign name" className="outline-none py-2 pr-4 white block w-full textstyle"
         required
-          />
+                handleChange={this.handleChange}
+                campaignname={this.campaignname}
+                discription={this.discription}/>
   {/* {errors.requiredField && <span>This field is required</span>} */}
       
           <Label className="textFeild">Discription</Label>
         <textarea name="discription" cols={40} rows={5} placeholder="Enter your Campaign details " className="outline-none white py-2 pr-4  block w-full textstyle"
           required
           />
-
+          <button className="primary float-right text-white">Submit</button>;
             </CardBody>
           </Card>
         </Form>
@@ -54,5 +85,5 @@ const Petitionreg = () => {
     </>
   )
 }
-
+}  
 export default Petitionreg

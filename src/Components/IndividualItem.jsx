@@ -67,7 +67,7 @@ function IndividualItem() {
    return (
 <>
                <div className='flex flex-col md:flex-row justify-between px-3 mt-3'>
-            <h2 className='text-xl font-semibold'>Recent</h2>
+            <h2 className='text-xl text-white font-semibold'>Recent</h2>
 
             <ull className='inline-flex space-x-3 '>
                {["StartUp", "Medical", "Disaster", "Sport"].map((text, index) => (
@@ -101,7 +101,7 @@ function IndividualItem() {
                   </div>
                   <div className='flex mt-2'>
                      <div className='p-3 w-1/2'>
-                        <button className='bg-gradient-to-tr from-fuchsia-600 to-violet-600  w-full h-12 rounded-md font-semibold' href={'<DetailedView/>'}>Donate</button>
+                        <button className='bg-gradient-to-tr from-fuchsia-600 to-violet-600  w-full h-12 rounded-md font-semibold' href="">Donate</button>
                      </div>
                      <div className='p-3 w-1/2'>
                         <button className='bg-gradient-to-tr from-fuchsia-600 to-violet-600  w-full rounded-md font-semibold h-12 p-px'>

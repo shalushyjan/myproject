@@ -19,13 +19,18 @@ const Details = () => {
 <div className="hidden md:flex items-center space-x-1">
 	<a
 		href=""
-		className="py-4 px-2 text-gray-500 hover:text-green-500  border-b-4 border-green-500 font-semibold "
+		className="py-4 px-2 text-xl text-gray-500 hover:text-green-500  border-b-4 border-green-500 font-semibold "
 		>Story</a>
 	<a
-		href=""
-		className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 "
+		href="#documents"
+		className="py-4 px-2 text-xl text-gray-500 font-semibold hover:text-green-500 "
 		>Documents</a
 	>
+</div>
+<div>
+  <p className='text-center text-[#daded9] p-16 text-3xl'>
+She comes from a family of very limited means, but as a very vivacious young girl, she always looked for something to be grateful for. Her parents wanted her to have an education and live a better life than them.
+  </p>
 </div>
 
     </>

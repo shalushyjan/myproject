@@ -1,4 +1,5 @@
 import React from 'react'
+import link from 'react-router-dom'
 
 const artists = [
    {
@@ -36,11 +37,12 @@ const SidebarRight = () => {
               alt={`top artist ${name}`}
             />
             <div className="ml-3">
-              <h3 className="font-semibold text-white">{name}</h3>
-              <p className="text-sm text-zinc-400">{handler}</p>
-               <button className=" w-24 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+              <h3 className="font-semibold  text-white">{name}</h3>
+              <p className="text-sm pb-4 text-zinc-400">{handler}</p>
+
+               <a href="/petition" className=" btn  w-24 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
              Sign
-            </button>
+            </a>
             </div>
           </li>
         ))}

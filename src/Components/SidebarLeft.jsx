@@ -28,7 +28,7 @@ function SidebarItem({ text, index }) {
       <li className='relative'>
          {console.log(text)}
          {index === 0 ? <div className='absolute -left-1 top-0 bg-fuchsia-600 w-2 h-8 rounded-full' /> : null}
-         <a href='\home' className={`pl-4 flex items-center capitalize   ${index === 0 ? "text-white" : "text-zinc-500"}`}>
+         <a href={"http://localhost:3000/"+text} className={`pl-4 flex items-center capitalize   ${index === 0 ? "text-white" : "text-zinc-500"}`}>
             <span className={`bg-zinc-800 w-8 h-8 grid place-items-center mr-2 rounded-md ${index === 0 ? "bg-fuchsia-600" : "bg-zinc-800"}`}>
                <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'>
                   {Icons[text]()}
@@ -47,12 +47,14 @@ function SidebarLeft() {
       <div className='hidden lg:flex h-screen flex-col justify-between w-48 fixed left-0 top-0 bottom-0 pt-24'>
          <ul className='space-y-8'>
             {["dashboard", "history","campaign" ,"petition", "wallet", "settings"].map((key, index) => (
+               
                <SidebarItem key={key} text={key} index={index} />
+
             ))}
          </ul>
          <div className='pb-5  px-4'>
             <hr className='mb-5 text-zinc-700' />
-            <a href='#' className='py-2 flex items-center  text-zinc-500'>
+            <a href='{key}' className='py-2 flex items-center  text-zinc-500'>
                <span className='bg-zinc-800 w-8 h-8 grid place-items-center mr-2 rounded-md'>
                   <svg xmlns='http://www.w3.org/2000/svg' className='h-5 w-5' viewBox='0 0 20 20' fill='currentColor'>
                      {Icons.logout()}

@@ -11,6 +11,8 @@ import CapmpaignForm from './pages/CampaignForm'
 import CreateHistory from './pages/CreateHistory'
 import Petitonreg from './pages/Petitionreg'
 import ItemPetition from "./pages/ItemPetition";
+import PetitionDetails from "./pages/PetitionDetails";
+
 function App() {
    return (
       <>
@@ -18,14 +20,18 @@ function App() {
    <Router>
     <Routes>
       <Route  path='/' element={<Home/>}>
-         <Route  path='/item' element={<ItemPetition/>}></Route>
-         <Route  path='/amounthistory' element={<HistoryTab/>}></Route>
-         <Route path='/itemDetails' element={<Details/>}></Route>
-         <Route path='/createhistory' element={<CreateHistory/>}></Route>
+         <Route  path='/dashboard' element={<ItemPetition/>}></Route>
+         <Route  path='' element={<HistoryTab/>}></Route>
+         <Route path='/item' element={<Details/>}></Route>
+         <Route path='/history' element={<CreateHistory/>}></Route>
+         <Route path= 'petition' element={<PetitionDetails/>}></Route>
+          <Route  path='/campaignForm' element={<CapmpaignForm/>}></Route>
+          <Route path='/petitionreg' element={<Petitonreg/>}></Route>
+
       </Route>
-      <Route  path='/campaignForm' element={<CapmpaignForm/>}></Route>
-      <Route path='/petitionreg' element={<Petitonreg/>}></Route>
-      <Route path='/peti' element={<ItemPetition/>}></Route>
+     
+      
+      {/* <Route path='/peti' element={<ItemPetition/>}></Route> */}
    </Routes>
     </Router>
 

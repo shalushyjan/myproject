@@ -5,7 +5,7 @@ function Header() {
             <div className='flex flex-wrap p-3 items-center sticky top-0 bg-zinc-900 h-fit  md:h-16 z-30'>
          <div className='flex items-center grow md:grow-0 w-fit md:w-48'>
             <div className='w-10 h-10 bg-gradient-to-tr from-fuchsia-600 to-violet-600 grid place-items-center rounded-full font-bold text-white  text-2xl'>D</div>
-            <div className='ml-2 font-bold text-xl'>Together</div>
+            <div className='ml-2 font-bold text-white text-xl'>Together</div>
          </div>
 
          <div className='flex items-center order-2 md:order-3 pl-0 md:pl-3'>

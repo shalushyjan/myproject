@@ -11,10 +11,11 @@ import { Container, Row, Col } from "reactstrap";
 
 function CampaignForm() {
   return (
-      <div className="main">
-      <Helmet>
+    <a href="">
+      <div className="pt-96 mt-28 main" >
+      {/* <Helmet>
         <style>{"body { background-image:url(https://th.bing.com/th/id/OIP.a7zcxkWpyz-ZV0e_dRu_WwHaEl?pid=ImgDet&w=1280&h=792&rs=1); background-size: cover; }"}</style>
-      </Helmet>
+      </Helmet> */}
       <Container>
         <Row>
           <Col>
@@ -23,6 +24,7 @@ function CampaignForm() {
         </Row>
       </Container>
     </div>
+    </a>
   )
 }
 
