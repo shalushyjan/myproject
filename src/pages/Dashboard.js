@@ -1,9 +1,10 @@
 import React from 'react'
-import IndividualItem from '../Components/IndividualItem'
-import SidebarRight from '../Components/SidebarRight'
+import IndividualItem from './Home Page/IndividualItem'
+import SidebarRight from './Home Page/SidebarRight'
 
-const ItemPetition = () => {
+const Dashboard = () => {
   return (
+    <>
       <>
         <div className='flex flex-col md:flex-row'>
                 <div className=' grow '>
@@ -17,7 +18,8 @@ const ItemPetition = () => {
         
       
     </>
+    </>
   )
 }
 
-export default ItemPetition
+export default Dashboard

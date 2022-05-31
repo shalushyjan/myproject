@@ -1,7 +1,7 @@
 import React from 'react'
-import Header from '../Components/Header'
-import AboutUsHeader from '../Components/AboutUsHeader'
-import SidebarLeft from '../Components/SidebarLeft'
+import Header from './Header'
+import AboutUsHeader from './AboutUsHeader'
+import SidebarLeft from './SidebarLeft'
 import { Outlet } from 'react-router-dom'
 
 import './homepage.css'

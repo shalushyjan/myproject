@@ -14,7 +14,7 @@ import Step1 from "./Step1";
 import Step2 from "./Step2";
 import Step3 from "./Step3";
 
-import MultiStepProgressBar from "../Components/MultiStepProgressBar";
+import MultiStepProgressBar from "./MultiStepProgressBar";
 import "./MultiStepProgressBar.css";
 
 class MasterForm extends Component {
