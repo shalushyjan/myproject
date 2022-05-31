@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Helmet } from "react-helmet";
-import MasterForm from "../Campaign and petition Form/MasterForm";
+import MasterForm from "../Forms/MasterForm";
 import { Container, Row, Col } from "reactstrap";
 
 // import "./styles.css";

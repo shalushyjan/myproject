@@ -1,6 +1,6 @@
 import React from 'react'
-import IndividualItem from './Home Page/IndividualItem'
-import SidebarRight from './Home Page/SidebarRight'
+import IndividualItem from './HomePage/IndividualItem'
+import SidebarRight from './HomePage/SidebarRight'
 
 const Dashboard = () => {
   return (

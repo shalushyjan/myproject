@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-import Home from "./pages/Home Page/Home"
+import Home from "./pages/HomePage/Home"
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import HistoryTab from './pages/History/HistoryTab'
-import Details from './pages/Capaign and Petition detail view/Details'
-import CapmpaignForm from './pages/Campaign and petition Form/CampaignForm'
+import Details from './pages/DetailView/Details'
+import CapmpaignForm from './pages/Forms/CampaignForm'
 
-import Petitonreg from './pages/Campaign and petition Form/Petitionreg'
-import PetitionDetails from "./pages/Capaign and Petition detail view/PetitionDetails";
+import Petitonreg from './pages/Forms/Petitionreg'
+import PetitionDetails from "./pages/DetailView/PetitionDetails";
 import ShareButtons from "./pages/ShareButton/ShareButtons";
 import Dashboard from "./pages/Dashboard";
 
